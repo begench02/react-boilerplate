@@ -1,0 +1,20 @@
+env:
+    browser: true
+    node: true
+    commonjs: true
+    es6: true
+parserOptions:
+    ecmaVersion: 6
+    sourceType: module
+    ecmaFeatures:
+        impliedStrict: true
+        jsx: true
+ignorePatterns: [dist]
+extends:
+    - airbnb
+    - prettier
+plugins:
+    - prettier
+rules:
+    prettier/prettier: error
+    import/no-extraneous-dependencies: "off"
